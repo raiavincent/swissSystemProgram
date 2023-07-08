@@ -1,0 +1,9 @@
+## rundown
+
+participants play each other in first round, random pairings
+in subsequent rounds, pairing is done based on scores
+same scores preferred, but can play down
+there is an option to do this based on rating in the first round, not worried about that now
+
+FIRST STEP
+    input all names of players

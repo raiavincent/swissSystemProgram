@@ -1,1 +1,1 @@
-## rundown
+work to create a new swiss system program for chess/anything that uses a swiss system
