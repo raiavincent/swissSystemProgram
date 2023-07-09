@@ -1,5 +1,6 @@
 
 # find tournament length
+# force number
 while True:
     try:
         rounds = int(input('Enter desired number of rounds: '))
