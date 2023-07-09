@@ -1,6 +1,12 @@
 
 # find tournament length
-rounds = input('Enter desired number of rounds: ')
+while True:
+    try:
+        rounds = int(input('Enter desired number of rounds: '))
+        break
+    except ValueError:
+        print('Enter a number')
+        continue
 
 # take input of player names
 # create an empty list of players at the start, that can take any number of inputs
