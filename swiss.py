@@ -1,3 +1,5 @@
+import random
+
 
 # find tournament length
 # force number
@@ -29,3 +31,26 @@ print(playerList)
 scoresInit = {key: 0  for key in playerList}
 
 print(scoresInit)
+
+# pair players
+# for the first round, random numbers for pairing, add to a list of lists
+
+pairList = []
+
+while len(playerList) > 0:
+    for player in playerList:
+        pair = random.sample(range(len(playerList)),2)
+        print(pair)
+        pairing = [playerList[pair[0]],playerList[pair[1]]]
+        print(pairing)
+        if all(x in pairList for x in pairing):
+            pairList.append([playerList[pair[0]],playerList[pair[1]]])
+            playerList = [x for x in playerList if x not in pairing]
+            print('Pairlist:' + pairList)
+        else:
+            pass
+
+
+
+print(pairList)
+print(playerList)
